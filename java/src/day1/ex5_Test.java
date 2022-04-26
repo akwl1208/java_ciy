@@ -9,8 +9,8 @@ public class ex5_Test {
 		//<내가 풀음>
 		//과일 판매는 소수점 자리가 없으므로 정수 타입..
 		//초기값을 뭘로 설정할지 모르겠음,,
-		int apple;
-		int orange;
+		//int apple;
+		//int orange;
 		
 		//<해답>
 		//판매량은 정수 타입
@@ -25,9 +25,9 @@ public class ex5_Test {
 		
 		//<내가 풀음>
 		//점수이므로 정수일거 같음..빵점이 있으니까 초기값은 0
-		int korscore = 0;
-		int engscore = 0;
-		int mathcore = 0;
+		//int korscore = 0;
+		//int engscore = 0;
+		//int mathcore = 0;
 		
 		//<해답>
 		//전제 조건에 따라 타입이 달라짐. 따라서 성적은 정수로 관리된다라는 가정이 필요
