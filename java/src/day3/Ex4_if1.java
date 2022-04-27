@@ -7,9 +7,7 @@ public class Ex4_if1 {
 	public static void main(String[] args) {
 		// 예제) 두 정수와 산술 연산자를 입력받아 연산 결과를 출력하는 코드를 작성하세시오
 		
-		/*<내가 푼거>
-		 *
-		 */
+		//<내가 푼거>
 		
 		Scanner scan = new Scanner(System.in);
 		
