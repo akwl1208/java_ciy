@@ -11,9 +11,13 @@ public class Ex18_scanner {
 		//import scanner(java.util) 선택해야함
 		//com.sun.java_cup.internal.runtime 이거 선택해서 오류 해결 안됨
 		
+		//Scaaner 입력 후 오류 뜨면 마우서커서 대서 'java.util 선택'
 		Scanner scan = new Scanner(System.in);
-		System.out.println("정수를 입력하세요 : ");
+		//println은 줄바꿈이 됨(print로) 
+		System.out.print("정수를 입력하세요 : ");
+		//입력값은 num에 저장
 		int num1 = scan.nextInt();
+		//콘솔창에 정수를 입력하면 입력한 정수는 num 입니다 반환
 		System.out.println("입력한 정수는 " + num1 + " 입니다.");
 		scan.close();
 
