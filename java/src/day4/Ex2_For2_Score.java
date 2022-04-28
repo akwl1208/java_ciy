@@ -2,8 +2,6 @@ package day4;
 
 import java.util.Scanner;
 
-import org.graalvm.compiler.lir.alloc.lsra.ssa.SSALinearScan;
-
 public class Ex2_For2_Score {
 
 	public static void main(String[] args) {
@@ -76,7 +74,7 @@ public class Ex2_For2_Score {
 		int i, num, sum = 0;
 		double avg;
 		
-		Scanner scan = new Scanner(System.in); 
+		Scanner scan = new Scanner(System.in);
 		
 		for (i=1; i<=3 ; i++) {
 			
