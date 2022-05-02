@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex5_Array3_score {
 
 	public static void main(String[] args) {
-		// 예제) 학생 3명의 국어 성정을 입력받고 총점과 평균을 구하는 코드를 작성
+		// 예제) 학생 3명의 국어 성적을 입력받고 총점과 평균을 구하는 코드를 작성
 		//단, 총점과 평균을 출력한 다음, 학생 3명의 성적을 출력
 		
 		//<내가 푼거>
