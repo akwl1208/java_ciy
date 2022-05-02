@@ -16,7 +16,7 @@ public class Ex1_Hello {
 		System.out.print("Hello world!");
 		
 		/*자주하는 에러
-		 * 가로 실수 : 가로 갯수 체크
+		 * 괄호 실수 : 괄호 갯수 체크
 		 * 메인 밖에 코드 생성 : 들여쓰기 잘하기 (tab키) 들여쓰기 취소 (shift+tab)
 		 */
 		
