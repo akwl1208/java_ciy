@@ -3,7 +3,7 @@ package day8;
 public class Ex2_Method2_Calculator {
 
 	public static void main(String[] args) {
-		// 예제) 두 정수와 산술연산자가 주어지면 calculatur를 이용하여 계산하고 출력
+		// 예제) 두 정수와 산술연산자가 주어지면 calculator를 이용하여 계산하고 출력
 		int a = 1, b = 2; //매개변수와 변수명이 같을 필요없음
 		char op = '/';
 		double res =calculator(a, op, b);
