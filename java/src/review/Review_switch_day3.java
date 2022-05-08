@@ -1,4 +1,4 @@
-package day3;
+package review;
 
 public class Review_switch_day3 {
 

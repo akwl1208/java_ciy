@@ -1,4 +1,4 @@
-package day3;
+package review;
 
 import java.util.Scanner;
 

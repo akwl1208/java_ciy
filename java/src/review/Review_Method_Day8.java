@@ -1,4 +1,4 @@
-package day8;
+package review;
 
 public class Review_Method_Day8 {
 
