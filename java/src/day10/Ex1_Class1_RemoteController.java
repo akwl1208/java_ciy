@@ -56,7 +56,7 @@ public class Ex1_Class1_RemoteController {
 			case 4: rm.volumeUp(); break;
 			case 5: rm.volumeDown(); break;
 			case 6: rm.turn(); break;
-			case 7: System.out.println("프로그램 종료11"); break;
+			case 7: System.out.println("프로그램 종료"); break;
 			default: System.out.println("잘못된 메뉴입니다");
 			}
 			System.out.println();
@@ -112,12 +112,6 @@ class RemoteController{
 		}else {
 			System.out.println("tv를 껐습니다");
 		}
-	
-	/* 기능: tv를 켜거나 끄는 메소드
-	 * 매개변수: 없음
-	 * 리턴타입: 없음 -> void
-	 * 메소드명: turn
-	 */
 	}
 	
 	/* 기능: tv 소리를 한칸 올리는 메소드
