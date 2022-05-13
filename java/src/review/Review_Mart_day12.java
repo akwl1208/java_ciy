@@ -39,7 +39,7 @@ public class Review_Mart_day12 {
 			System.out.println("====================");
 			
 			switch(menu) {
-			case 1: //제품 등록
+			case 1: //<제품 등록>
 				//음료수 등록하는지 과자 등록하는지 묻기
 				System.out.print("음료수(1)/과자(2) : ");
 				submenu = scan.nextInt();
@@ -64,10 +64,12 @@ public class Review_Mart_day12 {
 					count = scan.nextInt();
 					//배열 저장 후, index 1 증가
 					list[index++] = new Review_Snack_day12(name, amount, price, count);
+					break;
 				default: System.out.println("잘못 선택했습니다");
 				}		
 				break;
-			case 2: //제품 입고
+				
+			case 2: //<제품 입고>
 				//현재 제품 목록 출력
 				if(list == null || index == 0) {
 					System.out.println("등록된 제품 없음");
@@ -87,7 +89,7 @@ public class Review_Mart_day12 {
 				amount = amount + addAmount;
 				break;
 				
-			case 3: //제품 선택
+			case 3: //<제품 선택>
 				//현재 제품 목록 출력
 				if(list == null || index == 0) {
 					System.out.println("등록된 제품 없음");
@@ -101,13 +103,13 @@ public class Review_Mart_day12 {
 				System.out.print("구매할 제품 선택 : ");
 				num = scan.nextInt();
 				System.out.print("구매할 수량 입력 : ");
-				int buyAmount = scan.nextInt();
+				amount = scan.nextInt();
 				
-				//장바구니에 담가
-				//구매한 제품을 선택해서 가져옴
-				Review_Product_day12 buyProduct = list[num-1];	
+				//장바구니에 담기
+				//구매할 제품의 정보를 buyProduct에 저장
+				Review_Product_day12 buyProduct = list[num-1]; 
 				Review_Product_day12 selectProduct = null;
-				//선택할 제품을 복사해서 가져옴
+				//구매할 제품이 과자인지 음료수인지에 따라 정보를 selectProduct에 저장
 				if(buyProduct instanceof Review_Snack_day12) {
 					selectProduct = new Review_Snack_day12((Review_Snack_day12)buyProduct);
 				}else if(buyProduct instanceof Review_Drink_day12) {
@@ -117,21 +119,18 @@ public class Review_Mart_day12 {
 				basket[basketIndex] = selectProduct;
 				//장바구니에 담긴 개수를 1 증가
 				basketIndex++;
-				//선택한 제품 정보에 선택한 수량으로 변경
-				selectProduct.setAmount(buyAmount);
-				//판매제품리스트에서 수량 변경
-				buyProduct.setAmount(buyProduct.getAmount() - buyAmount);
-						
-				//제품 재고량에서 구매한 수량만큼 뺌
-				list[num - 1].setAmount(amount - buyAmount);
-				amount = amount - buyAmount;
+				//선택한 제품 정보에 구매할 수량으로 변경
+				selectProduct.setAmount(amount);
+				//마트제품목록에서 구매한 수량 빼줌
+				buyProduct.setAmount(buyProduct.getAmount() - amount);
+				
 			 	//현재 바구니에 담긴 목록 출력
 				for(int i = 0; i < basketIndex; i++) {
 					System.out.print(i+1 + ". ");
 					basket[i].print();
 				}
-				
 				break;
+				
 			case 4: //제품 구매
 				break;
 			case 5: 
