@@ -16,6 +16,11 @@ public abstract class Review_Product_day12 {
 	//기능1) 제품 출력
 	public abstract void print();
 	
+	//기능2) 수량 누적 합계
+	public void sumAmount(int amount) {
+		this.amount += amount;
+	}
+	
 	//getter/setter
 	public String getName() {
 		return name;
