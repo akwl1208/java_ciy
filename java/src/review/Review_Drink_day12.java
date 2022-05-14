@@ -11,7 +11,7 @@ public class Review_Drink_day12 extends Review_Product_day12{
 	}
 	
 	public Review_Drink_day12(Review_Drink_day12 product) {
-		this(product.getName(), product.getPrice(), product.getAmount(), product.getCapacity());
+		this(product.getName(),  product.getAmount(), product.getPrice(), product.getCapacity());
 	}
 
 	//getter, setter
