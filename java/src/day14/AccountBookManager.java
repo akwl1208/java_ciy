@@ -191,7 +191,7 @@ public class AccountBookManager implements ConsoleProgram {
 		System.out.print("삭제할 항목(정수) : ");
 		int delIndex = scan.nextInt();
 		
-		//수정할 항목이 맞는지 항목 출력
+		//삭제할 항목이 맞는지 항목 출력
 		Item tmp = abook.getItem(delIndex - 1);
 		if(tmp != null) {
 			System.out.println(delIndex-1 + ". " + tmp);
@@ -199,7 +199,7 @@ public class AccountBookManager implements ConsoleProgram {
 			return null;
 		}
 		System.out.println("===================");
-		//수정할건지 안내문구
+		//삭제할건지 안내문구
 		System.out.println("선택한 항목은 위와 같습니다. 삭제하시겠습니까?[예: true/아니오: false]");
 		boolean ok = scan.nextBoolean();
 		//false이면 수정 안함
